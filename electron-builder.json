@@ -1,0 +1,47 @@
+{
+  "asar": false,
+  "directories": {
+    "output": "release/"
+  },
+  "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
+  "files": [
+    "**/*",
+    "!**/*.ts",
+    "!*.map",
+    "!package.json",
+    "!package-lock.json"
+  ],
+  "extraResources": [
+    {
+      "from": "dist",
+      "to": "app",
+      "filter": [
+        "**/*"
+      ]
+    }
+  ],
+  "win": {
+    "icon": "dist/assets/icons/favicon.png",
+    "signAndEditExecutable": false,
+    "verifyUpdateCodeSignature": false,
+    "target": [
+      "portable",
+      "zip"
+    ]
+  },
+  "portable": {
+    "splashImage": "dist/assets/icons/electron.bmp"
+  },
+  "mac": {
+    "icon": "dist/assets/icons",
+    "target": [
+      "dmg"
+    ]
+  },
+  "linux": {
+    "icon": "dist/assets/icons",
+    "target": [
+      "AppImage"
+    ]
+  }
+}
