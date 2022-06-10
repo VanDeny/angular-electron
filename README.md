@@ -1,9 +1,5 @@
 [![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/)
 
-![Maintained][maintained-badge]
-[![Make a pull request][prs-badge]][prs]
-[![License][license-badge]](LICENSE.md)
-
 # Introduction
 
 Bootstrap and package your project with Angular 13 and Electron 16 (Typescript + SASS + Hot Reload) for creating Desktop applications.
